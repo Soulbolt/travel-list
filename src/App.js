@@ -32,6 +32,9 @@ function Form() {
 
     const newItem = { description, quantity, packed: false, id: Date.now() };
     console.log(newItem);
+    // This resets form after submit
+    setDescription("");
+    setQuantity(1);
   }
 
   return (
